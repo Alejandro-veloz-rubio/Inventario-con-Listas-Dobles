@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Con Listas Dobles</title>
+</head>
+<body>
+    <form>
+        <label for='idproducto'>
+            ID del Producto:<br><input type='number' id='idproducto'>
+            <br>
+        </label>
+        <label for='nomproducto'>
+            Nombre del producto:<br><input type='text' id='nomproducto'>
+            <br>
+        </label>
+        <label for='cantproducto'>
+            Cantidad:<br><input type='text' id='cantproducto'>
+            <br>
+        </label>
+        <label for='preproducto'>
+            Precio por unidad en pesos:<br><input type='text' id='preproducto'>
+            <br>
+        </label><br>
+        <button type='button' id='btnCrear'>Guardar</button>
+        <button type='button' id='btnListar'>Listar</button>
+        <button type='reset'>Cancelar</button>
+    </form><br>
+    <div id="resultados"></div>
+    <h1>Seccion para buscar y Eliminar</h1>
+    <form>
+        <label for="buscarid">
+            Introduce el ID para buscar el producto:<br><input type="number" id="buscarid">
+        </label>
+        <button type='button' id='btnBuscar'>Buscar</button>
+        <button type='button' id='btnEliminar'>Eliminar</button>
+        <button type="reset">Cancelar</button>
+    </form><br>
+    <div id="resultados2"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
