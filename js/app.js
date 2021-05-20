@@ -94,12 +94,15 @@ let Inventario=function(){
                     {
                         t.anterior.siguiente=t.siguiente; 
                         t.siguiente.anterior=t.anterior;
+                        t.siguiente=null;
+                        t.anterior=null;
                         alert('Se elimino con exito el Producto');
                     }
                     else{
                         if(t.id==id && t.siguiente==null)
                         {
                             t.anterior.siguiente=t.siguiente;
+                            t.anterior=null
                             alert('Se elimino con exito el Producto');
                         }
                         
